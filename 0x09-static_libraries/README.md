@@ -1,0 +1,2 @@
+Static library
+Static library
