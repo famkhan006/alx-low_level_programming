@@ -2,39 +2,48 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /**
  * main - driver function
- * Description: adds argv elements
- * @argc: number of elements
- * @argv: string of elements
- * Return: 0 or 1
+ * Description: print coin
+ * @argc: number of arguments
+ * @argv: string of arguments
+ * Return: 0 or 1;
  */
 
 int main(int argc, char *argv[])
 {
-        int sum, i;
+        int cents, check;
 
-        if (argc == 1)
+        if (argc != 2)
         {
-                printf("%d\n", 0);
+                printf("Error\n");
+                return (1);
         }
         else
         {
-
-        for (i = 1; i < argc; i++)
-        {
-                if (atoi(argv[i]))
-                {
-                        sum += atoi(argv[i]);
-                }
+                check = atoi(argv[1]);
+                cents = 0;
+                if (check < 0)
+                        printf("%d\n", 0);
                 else
                 {
-                        printf("Error\n");
-                        return (1);
+                        while (check != 0)
+                        {
+                                if (check >= 25)
+                                        check -= 25;
+                                else if (check >= 10)
+                                        check -= 10;
+                                else if (check >= 5)
+                                        check -= 5;
+                                else if (check >= 2)
+                                        check -= 2;
+                                else if (check >= 1)
+                                        check -= 1;
+                                cents += 1;
+                        }
+                        printf("%d\n", cents);
                 }
         }
-        printf("%d\n", sum);
-        }
-
         return (0);
 }
