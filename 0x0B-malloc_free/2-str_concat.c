@@ -1,4 +1,4 @@
-#include<stdlib.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -6,9 +6,8 @@
  * @s1: string to concatenate
  * @s2: other string to concatenate
  *
- * Return: pointer to the new string created (success) , or NULL (Error)
+ * Return: pointer to the new string created (Success), or NULL (Error)
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	char *c;
@@ -31,10 +30,10 @@ char *str_concat(char *s1, char *s2)
 			i++;
 		}
 	}
-	
+
 	if (s2)
 	{
-		while (i < (length1 + length2)) 
+		while (i < (length1 + length2))
 		{
 			c[i] = s2[j];
 			i++;
@@ -44,5 +43,4 @@ char *str_concat(char *s1, char *s2)
 	c[i] = '\0';
 
 	return (c);
-
 }
