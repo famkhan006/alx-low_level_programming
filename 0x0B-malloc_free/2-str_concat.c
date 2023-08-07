@@ -31,6 +31,7 @@ char *str_concat(char *s1, char *s2)
 			i++;
 		}
 	}
+	
 	if (s2)
 	{
 		while (i < (length1 + length2)) 
@@ -45,4 +46,3 @@ char *str_concat(char *s1, char *s2)
 	return (c);
 
 }
-
