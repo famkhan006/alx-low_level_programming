@@ -58,10 +58,12 @@ Example: Converting binary 10100011 to hexadecimal:
 11 -> **3**
 ```
 The hexadecimal equivalent of binary 10100011 is **A38**.
-
+```
+0x98 = (9 * 16^1) + (8 * 16^0) = (9 * 16) + (8 * 1) = 144 + 8 = 152
+and 98 = 98 / 16 = 6 remainder 2   so 0x62
+```
 -If we know how to convert then lets jump to  The Shift Operators
 
-Apologies for the confusion. Here's the revised note with all the content written in Markdown:
 
 **Motivation for Shift Operators**
 
@@ -108,3 +110,60 @@ By understanding and utilizing shift operators effectively, you can unlock the f
 The bitwise NOT operator is a unary operator that operates on a single operand and is particularly useful for scenarios where you need to flip or negate the bits of a number.
 
 <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/232/bitwise.PNG" alt="Bitwize Operators" width="300">
+
+
+| Decimal | Hexadecimal | Binary |
+|---------|-------------|--------|
+| 0       | 0x0         | 0000   |
+| 1       | 0x1         | 0001   |
+| 2       | 0x2         | 0010   |
+| 3       | 0x3         | 0011   |
+| 4       | 0x4         | 0100   |
+| 5       | 0x5         | 0101   |
+| 6       | 0x6         | 0110   |
+| 7       | 0x7         | 0111   |
+| 8       | 0x8         | 1000   |
+| 9       | 0x9         | 1001   |
+| 10      | 0xA         | 1010   |
+| 11      | 0xB         | 1011   |
+| 12      | 0xC         | 1100   |
+| 13      | 0xD         | 1101   |
+| 14      | 0xE         | 1110   |
+| 15      | 0xF         | 1111   |
+
+#### Negatives
+
+| Decimal | Binary (0b)         | Hexadecimal (0x) |
+| ------- | ------------------ | ---------------- |
+| -1      | 0b1111111111111111 | 0xFFFF           |
+| -2      | 0b1111111111111110 | 0xFFFE           |
+| -3      | 0b1111111111111101 | 0xFFFD           |
+| -4      | 0b1111111111111100 | 0xFFFC           |
+| -5      | 0b1111111111111011 | 0xFFFB           |
+| -6      | 0b1111111111111010 | 0xFFFA           |
+| -7      | 0b1111111111111001 | 0xFFF9           |
+| -8      | 0b1111111111111000 | 0xFFF8           |
+| -9      | 0b1111111111110111 | 0xFFF7           |
+| -10     | 0b1111111111110110 | 0xFFF6           |
+| -11     | 0b1111111111110101 | 0xFFF5           |
+| -12     | 0b1111111111110100 | 0xFFF4           |
+| -13     | 0b1111111111110011 | 0xFFF3           |
+| -14     | 0b1111111111110010 | 0xFFF2           |
+| -15     | 0b1111111111110001 | 0xFFF1           |
+| -16     | 0b1111111111110000 | 0xFFF0           |
+| -17     | 0b1111111111101111 | 0xFFEF           |
+| -18     | 0b1111111111101110 | 0xFFEE           |
+| -19     | 0b1111111111101101 | 0xFFED           |
+| -20     | 0b1111111111101100 | 0xFFEC           |
+| -21     | 0b1111111111101011 | 0xFFEB           |
+| -22     | 0b1111111111101010 | 0xFFEA           |
+| -23     | 0b1111111111101001 | 0xFFE9           |
+| -24     | 0b1111111111101000 | 0xFFE8           |
+| -25     | 0b1111111111100111 | 0xFFE7           |
+| -26     | 0b1111111111100110 | 0xFFE6           |
+| -27     | 0b1111111111100101 | 0xFFE5           |
+| -28     | 0b1111111111100100 | 0xFFE4           |
+| -29     | 0b1111111111100011 | 0xFFE3           |
+| -30     | 0b1111111111100010 | 0xFFE2           |
+| -31     | 0b1111111111100001 | 0xFFE1           |
+| -32     | 0b1111111111100000 | 0xFFE0
