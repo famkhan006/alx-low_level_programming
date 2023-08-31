@@ -167,3 +167,5 @@ The bitwise NOT operator is a unary operator that operates on a single operand a
 | -30     | 0b1111111111100010 | 0xFFE2           |
 | -31     | 0b1111111111100001 | 0xFFE1           |
 | -32     | 0b1111111111100000 | 0xFFE0
+
+
