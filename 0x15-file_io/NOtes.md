@@ -103,7 +103,6 @@ Here are some commonly used flags for the `open` system call:
 
 Remember to include the `<fcntl.h>` header file to use these flags.
 
-```
 
 
 
