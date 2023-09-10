@@ -2,7 +2,7 @@
 
 0.Motivation
 1.File Descriptors
-2.open System Call
+2.[open System Call](https://github.com/poricf/alx-low_level_programming/blob/master/0x15-file_io/NOtes.md#opening-flags)
 3.File Opening Modes and Flags
 4.Standard Input, Output, and Error
 5.write System Call
