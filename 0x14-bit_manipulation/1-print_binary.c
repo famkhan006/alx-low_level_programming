@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -6,28 +7,23 @@
  */
 void print_binary(unsigned long int n)
 {
+	unsigned long int temp;
+	int shifts;
+
 	if (n == 0)
 	{
 		printf("0");
 		return;
 	}
 
-	unsigned long int temp = n;
-	int shifts = 0;
+	for (temp = n, shifts = 0; (temp >>= 1) > 0; shifts++)
+		;
 
-	while (temp > 0)
-	{
-		temp >>= 1;
-		shifts++;
-	}
-
-	while (shifts >= 0)
+	for (; shifts >= 0; shifts--)
 	{
 		if ((n >> shifts) & 1)
 			printf("1");
 		else
 			printf("0");
-
-		shifts--;
 	}
 }
